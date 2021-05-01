@@ -2,12 +2,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
   }
-  
+  body{
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
   header > h1{
     text-align: center;
     padding: 10px 5px;
-    background: dodgerblue;
+    background: rgba(0,0,0,0.2);
     color:skyblue;
   }
   section{
@@ -15,11 +21,14 @@
   }
   section>button{
     padding: 0.8em 1.5em;
-    background: dodgerblue;
+    background: rgba(0,0,0,0.2);
     color: white;
     border: none;
     font-size: 1.2em;
     cursor: pointer;
+  }
+  section>button:hover{
+    background: rgba(0,0,0,0.3);
   }
   #modal{
     display: none;
@@ -44,7 +53,7 @@
     margin: 0;
     text-align: center;
     color: white;
-    background: dodgerblue;
+    background: #2193b0;  /* fallback for old browsers */
     margin: 10px auto;
   }
   span#btn-close{
